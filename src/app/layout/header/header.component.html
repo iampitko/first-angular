@@ -1,0 +1,23 @@
+<header class = "header">
+    <div class="hamburger">
+      <button (click)="toggleHamburger()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon>
+      </button>
+      <nav [ngClass]="{open: isOpenHamburger}">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">List</a>
+          </li>
+          <li>
+            <a href="#">Popular</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="profile">
+      <img src="../../../assets/img/avatar.jpg" alt="" height="35" width="35" />
+    </button>
+</header>
